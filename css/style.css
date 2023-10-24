@@ -1,14 +1,5 @@
-/*
-  Theme Name: DevFolio
-  Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*======================================
-//--//-->   STYLES GENERALES
-======================================*/
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
 body {
   background-color: #242424;
   color: #4e4e4e;
@@ -403,6 +394,14 @@ a:hover {
 .nav-logo {
   width: 380px;
 }
+.first-name {
+  font-family: "Tilt Neon", sans-serif;
+}
+.second-name {
+  /* background-color: rgb(198, 198, 198); */
+  color: rgb(151, 92, 222);
+  font-family: "Tilt Neon", sans-serif;
+}
 .navbar-b {
   transition: all 0.5s ease-in-out;
   background-color: transparent;
@@ -558,7 +557,7 @@ a:hover {
 
 .navbar-toggler span {
   display: block;
-  background-color: #fff;
+  background-color: #fff !important;
   height: 3px;
   width: 25px;
   margin-top: 4px;
@@ -678,10 +677,11 @@ a:hover {
 .lead {
   text-align: justify;
   font-size: 120%;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 .about-lead {
-  color: #250070;
+  color: #7d7d7d;
+  font-family: "Tilt Neon", sans-serif;
 }
 .about-img-container {
   height: 100%;
@@ -1257,6 +1257,9 @@ footer .credits a {
 }
 
 @media (min-width: 767px) {
+  .nav-logo {
+    width: 50px;
+  }
   .about-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
@@ -1273,6 +1276,9 @@ footer .credits a {
 }
 
 @media (min-width: 768px) {
+  .nav-logo {
+    width: 50px;
+  }
   .box-shadow-full {
     padding: 3rem;
   }
@@ -1330,6 +1336,22 @@ footer .credits a {
   .testimonial-box .description {
     text-align: center;
     padding: 0 13rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    padding: 3rem 3.25rem;
+  }
+  .work-box {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+  .service-box {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
   }
 }
 
